@@ -10,7 +10,7 @@ const defaultSrc = 'https://unpkg.com/vconsole@latest/dist/vconsole.min.js';
 
 export default function vConsolePlugin(options: VConsolePluginOptions): Plugin {
     return {
-        name: '@veno/vite-plugin-vconsole',
+        name: 'vite-plugin-simple-vconsole',
         enforce: 'pre',
         transformIndexHtml(html) {
             if (options.enable) {
