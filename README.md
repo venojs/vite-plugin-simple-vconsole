@@ -1,19 +1,19 @@
-# vite-plugin-vconsole
+# vite-plugin-simple-vconsole
 
 > vConsole plugin for vite, easy to use
 
 ### Install
 ```shell
-yarn add @veno/vite-plugin-vconsole -D
+yarn add vite-plugin-simple-vconsole -D
 # or
-npm i @veno/vite-plugin-vconsole -D
+npm i vite-plugin-simple-vconsole -D
 ```
 
 ### Usage
 
 ```js
 // vite.config.js
-import vConsolePlugin from '@veno/vite-plugin-vconsole'
+import vConsolePlugin from 'vite-plugin-simple-vconsole'
 
 export default {
   plugins: [
