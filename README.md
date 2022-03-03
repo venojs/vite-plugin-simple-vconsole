@@ -1,4 +1,4 @@
-# vite-plugin-simple-vconsole
+# vite-plugin-simple-vconsole [![npm](https://img.shields.io/npm/v/vite-plugin-simple-vconsole.svg)](https://npmjs.com/package/vite-plugin-simple-vconsole)
 
 > vConsole plugin for vite, easy to use
 ### Install
