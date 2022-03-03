@@ -1,7 +1,6 @@
 # vite-plugin-simple-vconsole
 
 > vConsole plugin for vite, easy to use
-
 ### Install
 ```shell
 yarn add vite-plugin-simple-vconsole -D
@@ -17,7 +16,9 @@ import vConsolePlugin from 'vite-plugin-simple-vconsole'
 
 export default {
   plugins: [
-    vConsolePlugin(),
+    vConsolePlugin({
+      enable: true,
+    }),
   ]
 }
 ```
