@@ -1,0 +1,23 @@
+{
+    "name": "vite-plugin-simple-vconsole",
+    "version": "0.1.7",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsup-node src/index.ts --dts --format esm,cjs --clean",
+        "pub": "npm version prerelease && pnpm build && pnpm publish --tag dev",
+        "pub:stable": "pnpm build && pnpm publish --access public"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "jest": "^27.5.1",
+        "tsup": "^5.11.13",
+        "typescript": "^4.6.2",
+        "vite": "^2.8.6"
+    }
+}
