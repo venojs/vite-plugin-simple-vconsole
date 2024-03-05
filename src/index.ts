@@ -4,7 +4,6 @@ export interface VConsolePluginOptions {
     enable?: boolean;
     src?: string;
     theme?: 'light' | 'dark';
-    injectTo?: 'head' | 'body';
 }
 
 const defaultSrc = 'https://unpkg.com/vconsole@latest/dist/vconsole.min.js';
@@ -14,7 +13,7 @@ export default function vConsolePlugin(options: VConsolePluginOptions): Plugin {
         name: 'vite-plugin-simple-vconsole',
         enforce: 'pre',
         transformIndexHtml(html) {
-            const injectTo = options.injectTo || 'head';
+            const injectTo = 'head-prepend';
             if (options.enable) {
                 return [
                     {
