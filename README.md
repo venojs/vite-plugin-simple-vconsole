@@ -46,6 +46,7 @@ interface VConsolePluginOptions {
     enable?: boolean;
     src?: string; // cdn url, default is https://unpkg.com/vconsole@latest/dist/vconsole.min.js
     theme?: 'light' | 'dark';
+    injectTo?: 'head' | 'body'; // default 'head'
 }
 ```
 
